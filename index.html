@@ -41,7 +41,7 @@
         function(hook) {
           hook.doneEach(function() {
             if (window.mermaid) {
-              window.mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'default' });
+              window.mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'default', flowchart: { htmlLabels: true }, sequence: { mirrorActors: false } });
               window.mermaid.run({ querySelector: '.mermaid' });
             }
           });
